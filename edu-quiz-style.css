@@ -1,0 +1,165 @@
+/* edu-quiz-style.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f1ea; /* Soft warm background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Main Quiz Container */
+.quiz-container {
+  background-color: #fefae0; /* Soft beige instead of white */
+  padding: 40px 50px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+/* Header */
+h1 {
+  color: #3f51b5;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Question Text */
+#question-text {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  color: #333;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f7ed; /* Very soft background */
+}
+
+/* Options List */
+#options-list {
+  list-style-type: upper-alpha;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+
+#options-list li {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background-color: #e0ebf5; /* Soft blue-gray */
+  border: 1px solid #b0c4de;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  user-select: none;
+  color: #2c2c2c;
+}
+
+#options-list li:hover {
+  background-color: #cbdfee;
+}
+
+/* Correct/Wrong Styles */
+#options-list li.correct {
+  background-color: #d0e8c1 !important;
+  border-color: #a8d5a2;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+#options-list li.wrong {
+  background-color: #f7c6c7 !important;
+  border-color: #ef9a9a;
+  color: #b71c1c;
+  font-weight: bold;
+}
+
+/* Timer & Button Controls */
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#timer {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Next Button */
+#next-btn {
+  background-color: #3f51b5;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  color: #fefae0; /* Beige text instead of white */
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:disabled {
+  background-color: #9fa8da;
+  cursor: not-allowed;
+}
+
+#next-btn:hover:not(:disabled) {
+  background-color: #303f9f;
+}
+
+/* Result Box */
+#result-box {
+  display: none;
+}
+
+#result-box.visible {
+  display: block;
+}
+
+#score {
+  font-size: 1.6rem;
+  color: #3f51b5;
+  font-weight: 700;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Restart Button */
+#restart-btn {
+  background-color: #3f51b5;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  color: #fefae0;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+#restart-btn:hover {
+  background-color: #303f9f;
+}
+
+
+
+
